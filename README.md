@@ -2,6 +2,7 @@
 工具主要用于二倍图自动生成sprite
 ## 下面举个例子
 ### 目录结构
+```
 -static 
     -dest
         -imgs
@@ -12,7 +13,7 @@
             -index.css
 -gulp
     gulputil.js
-
+```
 ### 代码示例
 ```
 /*缩略图*/
@@ -44,7 +45,7 @@ gulp.task('spritetask', ["sasstask", "fileMap"], function () {
 ## 备注
 
 图片精灵的公共样式
-`
+```
 @mixin image_set($url, $suffix:"png") {
     display: inline-block;
     background-image:url(#{$url}1x.#{$suffix});
@@ -60,14 +61,13 @@ i[class*='icon-'] {
     @include image_set("../imgs/sprite/", "png");
     background-size: auto!important;
 }
-
-`
+```
 调试的时候 可以将图片用原始的方式进行书写
-`
+```
 .icon-arrow-down {
     background-image: url(../imgs/1x/icon-arrow-down.png)!important;
     width: 16px;
     height: 16px;
 }
-`
+```
 
