@@ -14,7 +14,7 @@
     gulputil.js
 
 ### 代码示例
-`
+```
 /*缩略图*/
 gulp.task('thumbnailtask', function () {
     return gulp.src('../static/dest/imgs/2x/*.png')
@@ -34,7 +34,8 @@ gulp.task('spritetask', ["sasstask", "fileMap"], function () {
             .pipe(gulp.dest('../static/dest/css'));
     });
 });
-`
+```
+
 ### 思路说明
 * 先通过 gulp-jingoal-thumbnail 将2x里面的二倍图图片转化成1倍图
 * 通过 jingoal-sprite 浏览2x里面所有的图片, 抢图片合并成一张图片并且记下图片的位置, 已经长宽, 会在static/dest/imgs/sprite 下面生成3个文件 2x.png 1x.png map.json
