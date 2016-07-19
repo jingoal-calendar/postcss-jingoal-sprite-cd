@@ -1,3 +1,5 @@
+从postcss-jingoal-sprite代码库Fork而来，由Jingoal成都团队维护
+
 ## 工具介绍
 工具主要用于二倍图自动生成sprite
 ## 下面举个例子
