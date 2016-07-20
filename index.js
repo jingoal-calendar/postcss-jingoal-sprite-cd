@@ -2,7 +2,7 @@ var postcss = require('postcss');
 var path = require('path');
 var fs = require('fs');
 //require("./checkRules.js");
-module.exports = postcss.plugin('postcss-jingoal-sprite', function (opts) {
+module.exports = postcss.plugin('postcss-jingoal-sprite-cd', function (opts) {
   opts = opts || {};
   return function (css,result) {
     var cssUrl = path.dirname(css.source.input.file);

@@ -1,4 +1,4 @@
-从postcss-jingoal-sprite代码库Fork而来，由Jingoal成都团队维护
+从postcss-jingoal-sprite-cd代码库Fork而来，由Jingoal成都团队维护
 
 ## 工具介绍
 工具主要用于二倍图自动生成sprite
@@ -32,7 +32,7 @@ gulp.task('spritetask', ["sasstask", "fileMap"], function () {
     sprite.createSprite(function () {
         gulp.src('../static/dest/css/*.css')
             .pipe(postcss([
-                require('postcss-jingoal-sprite')
+                require('postcss-jingoal-sprite-cd')
             ]))
             .pipe(gulp.dest('../static/dest/css'));
     });
@@ -40,8 +40,8 @@ gulp.task('spritetask', ["sasstask", "fileMap"], function () {
 ```
 
 ### 思路说明
-* 先通过 gulp-jingoal-thumbnail 将2x里面的二倍图图片转化成1倍图
-* 通过 jingoal-sprite 浏览2x里面所有的图片, 抢图片合并成一张图片并且记下图片的位置, 已经长宽, 会在static/dest/imgs/sprite 下面生成3个文件 2x.png 1x.png map.json
+* 先通过 gulp-jingoal-thumbnail-cd 将2x里面的二倍图图片转化成1倍图
+* 通过 jingoal-sprite-cd 浏览2x里面所有的图片, 抢图片合并成一张图片并且记下图片的位置, 已经长宽, 会在static/dest/imgs/sprite 下面生成3个文件 2x.png 1x.png map.json
 * 最后通过本插件 分析 static/dest/css/index.css 里面 background:url(.*), 或者background-image: url(.*); 将这些代码替换成background-position  并自动加上宽高
 
 ## 备注

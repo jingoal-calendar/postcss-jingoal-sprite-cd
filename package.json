@@ -1,5 +1,5 @@
 {
-  "name": "postcss-jingoal-sprite",
+  "name": "postcss-jingoal-sprite-cd",
   "version": "1.0.6",
   "description": "sprite 替换工具",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:jingoal-chengdu/postcss-jingoal-sprite.git"
+    "url": "git@github.com:jingoal-chengdu/postcss-jingoal-sprite-cd.git"
   },
   "author": {
     "name": "985867294@qq.com"
   },
   "dependencies": {
-    "gulp-jingoal-thumbnail": "latest",
-    "jingoal-sprite": "latest"
+    "gulp-jingoal-thumbnail-cd": "latest",
+    "jingoal-sprite-cd": "latest"
   },
   "license": "ISC",
   "maintainers": [
