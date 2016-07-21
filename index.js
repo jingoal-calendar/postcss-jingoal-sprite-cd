@@ -12,7 +12,7 @@ module.exports = postcss.plugin('postcss-jingoal-sprite-cd', function (opts) {
         var imgUrlReg = /url\(['"]?(.*)\1?\)/;
         var result = imgUrlReg.exec(decl.value);
         if(result){
-          var imgSrc = path.resolve(cssUrl+"\\"+result[1]).replace(/\\/g, "/");
+          var imgSrc = path.resolve((cssUrl+"\\"+result[1]).replace(/\\/g, "/"));
           if(spriteMap[imgSrc]){
             var spriteValue = spriteMap[imgSrc];
             decl.replaceWith({prop:"background-position",value:["-",spriteValue.x,"px -",spriteValue.y,"px"].join("")});
