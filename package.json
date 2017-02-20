@@ -1,6 +1,6 @@
 {
   "name": "postcss-jingoal-sprite-cd",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "sprite 替换工具",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:jingoal-chengdu/postcss-jingoal-sprite-cd.git"
+    "url": "git@github.com:jingoal-calendar/postcss-jingoal-sprite-cd.git"
   },
   "author": {
     "name": "jingoal-cd"
